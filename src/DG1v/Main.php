@@ -17,7 +17,7 @@ public function onEnable(){
     $this->getServer()->getLogger()->info(c::RED."Plugin has been disable");
      }
      public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
-      $this->getName)(({
+     switch ($cmd->getName()){
        case 'gp':
         $sender->setHealth(20);
          break;
